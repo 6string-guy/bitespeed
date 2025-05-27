@@ -5,8 +5,10 @@ A backend service that identifies and links user contacts based on email and pho
 ---
 
 ##  Hosted Endpoint
-
+   - Directly send the request to the below url (it is along with /identify route so no need to add it additionally)
+     
 **POST** [`https://bitespeed-production-1aac.up.railway.app/identify`](https://bitespeed-production-1aac.up.railway.app/identify)
+  
 
 ---
 
