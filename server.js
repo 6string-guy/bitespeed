@@ -9,7 +9,7 @@ app.use(cors());
 const PORT = process.env.SERVER_PORT || 3000;
 
 app.listen(PORT, () => {
-    console.log( `Server id running on PORT ${PORT}`)
+    console.log( `Server is running on PORT ${PORT}`)
 })
 
 app.use(bodyParser.json());
@@ -56,7 +56,7 @@ app.post("/identify", async (req, res) => {
       };
     } else {
       // Existing contacts logic
-      let primaryContact = existingContacts[0];
+       primaryContact = existingContacts[0];
 
       for (let contact of existingContacts) {
         if (
