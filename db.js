@@ -19,12 +19,6 @@ const pool = mysql.createPool({
 });
 
 
-pool
-  .getConnection()
-  .then((connection) => {
-    console.log("Connected to Aiven MySQL");
-    connection.release();
-  })
-  .catch((err) => console.error("Connection error:", err));
+
 
 export default pool;
