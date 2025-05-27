@@ -104,6 +104,7 @@ app.post("/identify", async (req, res) => {
     }
 
     // Get final linked contacts
+    console.log(primaryContact);
     const [linkedContacts] = await connection.query(
       `SELECT * FROM contacts 
          WHERE (id = ? OR linkedId = ?)
